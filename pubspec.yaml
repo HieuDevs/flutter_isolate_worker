@@ -1,9 +1,9 @@
-name: isolate_worker
+name: flutter_isolate_worker
 description: A Flutter package for managing background tasks using Isolates with customizable messaging and resource optimization.
 version: 1.0.0
-homepage: https://github.com/HieuDevs/isolate_worker
-repository: https://github.com/HieuDevs/isolate_worker
-issue_tracker: https://github.com/HieuDevs/isolate_worker/issues
+homepage: https://github.com/HieuDevs/flutter_isolate_worker
+repository: https://github.com/HieuDevs/flutter_isolate_worker
+issue_tracker: https://github.com/HieuDevs/flutter_isolate_worker/issues
 environment:
   sdk: ">=2.17.0 <4.0.0"
 dependencies:
