@@ -11,7 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-# isolate_worker 🚀
+# Flutter Isolate Worker 🚀
 
 ## 🎬 Demo GIF
 
@@ -23,7 +23,7 @@ A Dart/Flutter package for running heavy or parallelizable tasks in the backgrou
 
 ## 📚 Table of Contents
 
-- [isolate\_worker 🚀](#isolate_worker-)
+- [Flutter Isolate Worker 🚀](#flutter-isolate-worker-)
   - [🎬 Demo GIF](#-demo-gif)
   - [📚 Table of Contents](#-table-of-contents)
   - [✨ Introduction](#-introduction)
@@ -49,7 +49,7 @@ A Dart/Flutter package for running heavy or parallelizable tasks in the backgrou
 
 ## ✨ Introduction
 
-`isolate_worker` is a Dart/Flutter package for running heavy or parallelizable tasks in the background using Dart Isolates, with a simple message-based API and convenient worker pool management.
+`flutter_isolate_worker` is a Dart/Flutter package for running heavy or parallelizable tasks in the background using Dart Isolates, with a simple message-based API and convenient worker pool management.
 
 ---
 
@@ -113,7 +113,7 @@ A Dart/Flutter package for running heavy or parallelizable tasks in the backgrou
 You need to create a class that extends WorkerMessage and override the execute method:
 
 ```dart
-import 'package:isolate_worker/isolate_worker.dart';
+import 'package:flutter_isolate_worker/flutter_isolate_worker.dart';
 
 class FactorialMessage extends WorkerMessage<int, int> {
   FactorialMessage(int input) : super(null, input);
@@ -174,7 +174,7 @@ pool.events.listen((event) {
 ## 📝 Full Example
 
 ```dart
-import 'package:isolate_worker/isolate_worker.dart';
+import 'package:flutter_isolate_worker/flutter_isolate_worker.dart';
 
 class SumMessage extends WorkerMessage<List<int>, int> {
   SumMessage(List<int> input) : super(null, input);
@@ -219,7 +219,7 @@ void main() async {
 
 - [Dart Isolates](https://dart.dev/guides/libraries/concurrency)
 - [Flutter documentation](https://docs.flutter.dev/)
-- [Source code on pub.dev](https://pub.dev/packages/isolate_worker)
+- [Source code on pub.dev](https://pub.dev/packages/flutter_isolate_worker)
 
 ---
 
