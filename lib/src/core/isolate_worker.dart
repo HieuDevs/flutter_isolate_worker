@@ -108,6 +108,7 @@ class IsolateWorker {
     _sendPort.send(messageMap);
 
     if (timeout != null) {
+      // ignore: body_might_complete_normally_catch_error
       completer.future.timeout(timeout).catchError((_) {
         _completers.remove(id);
       });
